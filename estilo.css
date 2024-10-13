@@ -22,6 +22,19 @@ body{
     
 }
 
+.wspa{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    color:wheat;
+    font-size: 35px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50px;
+    width: 55px;
+    height: 52px;
+
+}
 
 h2{
     color: white;
@@ -53,6 +66,8 @@ img{
 
 .pie{
     margin-top:200px;
+    background-color: black;
+    
 }
 
 .pokebola1{
