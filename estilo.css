@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(151, 12, 12);
+}
+
+
+.pokebola{
+   width: 40px;
+   margin-right:10px;
+   filter: brightness(88%);
+}
+
+.nav{
+    background-color: rgb(2, 2, 2);
+    
+}
+
+
+h2{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+h5{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.caja{
+    margin-left:40px;
+}
+.card{
+   width: 250px;
+   border: solid 2px rgb(12, 12, 12);
+   
+   
+}
+img{
+    width:fit-content;
+}
+
+.pie{
+    margin-top:200px;
+}
+
+.pokebola1{
+    width: 25px;
+}
+
