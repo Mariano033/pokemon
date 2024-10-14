@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:blue;
+    background-color:#ffffff;
 }
 
 
@@ -27,17 +27,18 @@ body{
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    color:wheat;
+    color:rgb(248, 248, 248);
     font-size: 35px;
-    background-color: rgb(10, 10, 10);
-    border-radius: 50px;
+    background-color: rgb(167, 3, 3);
+    border-radius:50px;
+    
     width: 55px;
     height: 52px;
 
 }
 
 h2{
-    color: white;
+    color: black;
     margin-top: 50px;
     margin-bottom: 40px;
     font-size: 18px;
