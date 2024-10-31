@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:#f0e32f;
+    background-color:white;
     
     background-size:contain;
 }
@@ -23,19 +23,17 @@ body{
 .nav{
     background-color: rgb(2, 2, 2);
     margin-bottom: 120px;
-    
-    
-}
-header{
-    background-color: black;
    
-}
-.carro{
     
-    width: 300px;
-    margin-top: 57px;
-    margin-left: 400px;
-
+    
+}
+#titulo{
+    font-weight: 650;
+    color: yellow;
+    text-shadow: 1px 1px 1px rgb(12, 12, 226);
+}
+.buscador{
+    font-style: italic;
     
 }
 
@@ -55,7 +53,7 @@ header{
 }
 
 h2{
-    color: black;
+    color: rgb(180, 3, 3);
     margin-top: 80px;
     margin-bottom: 40px;
     font-size: 18px;
@@ -76,16 +74,26 @@ p{
     
 }
 
-.caja{
-    margin-left:40px;
-    
-}
+
 .card{
    
-   width: 220px;
-   border: solid 2px rgb(12, 12, 12);
+   width: 100%;
+   max-width: 18rem;
+   border: solid 1px black;  
    
-   
+}
+
+.category-container{
+    margin-bottom: 40px;
+}
+
+.botonn{
+    background-color: rgb(204, 13, 13);
+    border: transparent;
+}
+
+.botonn:hover{
+    background-color: rgb(245, 38, 38);
 }
 img{
     width:80px;
