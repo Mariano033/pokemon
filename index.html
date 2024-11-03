@@ -29,6 +29,10 @@
                         </ul>
                     </li>
                 </ul>
+                <!-- Ícono del carrito -->
+             <div id="cartIcon" class="cart-icon" onclick="toggleCartModal()">
+             🛒 <span id="cartCount">0</span>
+            </div>
             </div>
         </div>
     </nav>
@@ -63,7 +67,27 @@
 <section class="py-5 container d-flex flex-wrap justify-content-center" id="productContainer">
   <!-- Aquí se agregarán dinámicamente las tarjetas de productos -->
 </section>
-                                         
+
+
+      <!-- Modal del Carrito -->
+<div id="cartModal" class="modal" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Carrito de Compras</h5>
+                <button type="button" class="btn-close" onclick="toggleCartModal()"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-danger" onclick="finalizePurchase()">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
    </main>
@@ -86,5 +110,11 @@
         <script src="js/scripts.js"></script>
         <script src="buscador.js"></script>
         <script src="tarjetas.js"></script>
+        <script src="cart.js"></script>
+
+        
+
+
+
 </body>
 </html>
