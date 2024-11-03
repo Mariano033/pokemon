@@ -2,7 +2,7 @@
 // Crear productos de ejemplo y agregar al contenedor
 const categories = [
     {
-        title: 'Figuras Jazwares',
+        title: 'Figuras Jazwares' ,
         products: [
             { id: 1, name: 'Tuerting', price: 15500, image: './img/tuerwing2.jpg' },
             { id: 2, name: 'Pikachu', price: 18000, image: './img/pikachu22.jpg' },
@@ -15,7 +15,7 @@ const categories = [
             { id: 9, name: 'Boulbasaur', price:17000, image: './img/bolbasor222.jpg' },
         ],
     },
-    {
+    {  
         title: 'Paquetes Jazwares',
         products: [
             { id: 1, name: 'bolbasur y pikachu ', price:28500, image: './img/bolbaypika.jpg' },

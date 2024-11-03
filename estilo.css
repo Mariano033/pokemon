@@ -34,9 +34,12 @@ body{
 }
 .buscador{
     font-style: italic;
+    margin-top: 20px;
     
 }
-
+#productContainer{
+    margin-bottom: 190px;
+}
 .wspa{
     position: fixed;
     bottom: 20px;
@@ -59,6 +62,7 @@ h2{
     font-size: 18px;
     text-align: center;
     font-weight: 500;
+    margin-top: 2px;
     
 }
 
@@ -77,19 +81,39 @@ p{
 
 .card{
    
-   width: 100%;
-   max-width: 18rem;
-   border: solid 1px black;  
+   width: 18rem;
+   padding: 15px;
+   border: solid 1px #ddd ; 
+   border-radius: 8px;
+   margin: 10px; 
+   margin-top: 2px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content:space-between;
+   
    
 }
-
+.card-img-top{
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain; /*evita que la imagen se distocione*/
+    margin-bottom: 10px;
+}
 .category-container{
     margin-bottom: 40px;
 }
 
 .botonn{
+    width: 100%;
+    margin-top: auto;
+    padding: 10px;
     background-color: rgb(204, 13, 13);
     border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .botonn:hover{

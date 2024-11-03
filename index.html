@@ -22,8 +22,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle menu" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Figuras</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Figuras Jazwares</a></li>
-                            <li><a class="dropdown-item" href="#">Cajas Jazwares</a></li>
+                            <li><a class="dropdown-item" href="#productContainer">Figuras Jazwares</a></li>
+                            <li><a class="dropdown-item" href="#f2">Cajas Jazwares</a></li>
                             <li><hr class="dropdown-divider" /></li>
                             <li><a class="dropdown-item"  href="#">Contacto</a></li>
                         </ul>
@@ -55,7 +55,7 @@
 
   <div class="container my-4">
     <div class="d-flex justify-content-center mb-3">
-        <input type="text" id="searchInput" class="form-control w-50 buscador" oninput="searchProducts(this.value)" placeholder="Buscar productos..." />
+        <input type="text" id="searchInput" class="form-control w-50 buscador"  placeholder="Buscar productos..." />
     </div>
     <div id="productContainer1" class="text-center"></div> <!-- Contenedor para los resultados de búsqueda -->
 </div>
@@ -84,6 +84,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="buscador.js"></script>
         <script src="tarjetas.js"></script>
 </body>
 </html>
