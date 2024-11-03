@@ -11,15 +11,19 @@ const categories = [
             { id: 7, name: 'Charmeleon', price: 25000, image: './img/charmel.jpg' },
             { id: 8, name: 'Charizard', price: 38000, image: './img/chari.jpg' },
             { id: 9, name: 'Boulbasaur', price: 17000, image: './img/bolbasor222.jpg' },
+            { id: 10, name: 'Scyther', price: 35000, image: './img/ss.jpg' },
+
         ],
     },
     {
         title: 'Paquetes Jazwares',
         products: [
-            { id: 1, name: 'bolbasur y pikachu', price: 28500, image: './img/bolbaypika.jpg' },
-            { id: 2, name: 'Magmar, Pikachu y Tuerting', price: 48000, image: './img/packx3.jpg' },
-            { id: 3, name: 'Charmander, Charmeleon, Charizard', price: 150000, image: './img/charizard.jpg' },
-        ],
+            { id: 1, name: 'Paquete doble', price: 28500, image: './img/pikachu y bol.jpg' },
+            { id: 2, name: 'Paquete triple', price: 48000, image: './img/packx3.jpg' },
+            { id: 3, name: 'Paquete triple', price: 150000, image: './img/charizard.jpg' },
+            { id: 4, name: 'Paquete triple', price: 60000, image: './img/paquete agua y tokepi.jpg' },
+            { id: 4, name: 'Paquete triple', price: 55000, image: './img/paquete char y meta.jpg' },
+        ]
     },
 ];
 
