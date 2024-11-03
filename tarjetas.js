@@ -1,5 +1,3 @@
-// tarjetas.js
-
 const categories = [
     {
         title: 'Figuras Jazwares',
@@ -25,11 +23,24 @@ const categories = [
     },
 ];
 
-// Agregar productos al contenedor
-const productContainer = document.getElementById('productContainer');
+const cart = [];
+
+// Función para agregar productos al carrito
+function addToCart(product) {
+    cart.push(product);
+    updateCartCount();
+    // Aquí puedes agregar lógica para mostrar el contenido del carrito si es necesario
+}
+
+// Actualiza el contador del carrito
+function updateCartCount() {
+    const cartCount = document.getElementById('cartCount');
+    cartCount.textContent = cart.length;
+}
 
 // Función para mostrar productos
 function displayProducts() {
+    const productContainer = document.getElementById('productContainer');
     productContainer.innerHTML = ''; // Limpiar el contenedor antes de mostrar los productos
 
     categories.forEach(category => {
@@ -57,7 +68,7 @@ function displayProducts() {
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">$${product.price}</p>
-                    <button class="btn btn-success botonn" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
+                    <button class="btn btn-success" onclick="addToCart({ name: '${product.name}', price: ${product.price} })">Agregar al carrito</button>
                 </div>
             `;
 
@@ -70,4 +81,4 @@ function displayProducts() {
 }
 
 // Llamar a displayProducts al cargar la página
-window.onload = displayProducts;
+window.onload = displayProducts;s
