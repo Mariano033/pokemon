@@ -141,7 +141,7 @@ img{
     top: 80px;
     border-radius: 8px;
     border: solid 2px transparent;
-    background-color: rgb(238, 234, 234);
+    background-color: rgb(228, 226, 226);
     padding-top: 35px;
     padding-bottom: 35px;
 }
@@ -163,6 +163,7 @@ img{
 .dicho{
     margin-top: 40px;
     margin-bottom: 40px;
+    color: grey;
 }
 
 .parrafop-final{
@@ -172,4 +173,8 @@ img{
 .btn{
     margin: 2px;
     border-radius: 8px;
+}
+
+#cartCount{
+    color: rgb(230, 10, 10);
 }

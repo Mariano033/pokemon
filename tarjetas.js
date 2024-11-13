@@ -1,5 +1,3 @@
-// tarjetas.js
-
 const categories = [
     {
         title: 'Figuras Jazwares',
@@ -121,6 +119,28 @@ function displayCart() {
 function toggleCartModal() {
     const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
     cartModal.toggle();
+}
+
+// Función para finalizar la compra y generar el enlace de WhatsApp
+function finalizePurchase() {
+    if (cart.length === 0) {
+        alert("El carrito está vacío. Agrega productos antes de finalizar la compra.");
+        return;
+    }
+
+    const businessPhone = "3515175840"; // Reemplaza con el número de WhatsApp de la empresa
+    let message = "Resumen de mi compra";
+
+    cart.forEach(product => {
+        message += `- ${product.name} - $${product.price}%0A`;
+    });
+
+    const total = cart.reduce((sum, product) => sum + product.price, 0);
+    message += `%0ATotal: $${total}`;
+
+    // Crear enlace de WhatsApp
+    const whatsappLink = `https://wa.me/${businessPhone}?text=${message}`;
+    window.open(whatsappLink, "_blank");
 }
 
 // Llamada para mostrar los productos al cargar la página
