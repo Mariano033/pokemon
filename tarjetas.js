@@ -128,7 +128,7 @@ function finalizePurchase() {
         return;
     }
 
-    const businessPhone = "3515175840"; // Reemplaza con el número de WhatsApp de la empresa
+    const businessPhone = ""; // Reemplaza con el número de WhatsApp de la empresa
     let message = "Resumen de mi compra";
 
     cart.forEach(product => {
