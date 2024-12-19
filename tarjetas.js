@@ -1,27 +1,27 @@
 const categories = [
     {
-        title: 'Figuras Jazwares',
+        title: 'Figuras de Pokemon',
         products: [
-            { id: 1, name: 'Turtwing', price: 19000, image: './img/tuerwing2.jpg' },
-            { id: 2, name: 'Pikachu', price: 21000, image: './img/pikachu22.jpg' },
-            { id: 3, name: 'Pikachu', price: 21000, image: './img/pikachu222.jpg' },
-            { id: 4, name: 'Magamar', price: 25000, image: './img/magmar22.jpg' },
-            { id: 5, name: 'Tyranitar', price: 38000, image: './img/tyra.jpg' },
-            { id: 6, name: 'Charmander', price: 21000, image: './img/charmender.jpg' },
-            { id: 7, name: 'Charmeleon', price: 25000, image: './img/charmel.jpg' },
-            { id: 8, name: 'Charizard', price: 38000, image: './img/chari.jpg' },
-            { id: 9, name: 'Bulbasaur', price: 21000, image: './img/bolbasor222.jpg' },
-            { id: 10, name: 'Scyther', price: 35000, image: './img/ss.jpg' },
+            { id: 1, name: 'Turtwing', price:20000, image: './img/tuerwing2.jpg' },
+            { id: 2, name: 'Pikachu', price: 26000, image: './img/pikachu22.jpg' },
+            { id: 3, name: 'Pikachu', price: 27000, image: './img/pikachu222.jpg' },
+            { id: 4, name: 'Magamar', price: 37000, image: './img/magmar22.jpg' },
+            { id: 5, name: 'Tyranitar', price: 53000, image: './img/tyra.jpg' },
+            { id: 6, name: 'Charmander', price: 27000, image: './img/charmender.jpg' },
+            { id: 7, name: 'Charmeleon', price: 37000, image: './img/charmel.jpg' },
+            { id: 8, name: 'Charizard', price: 40000, image: './img/chari.jpg' },
+            { id: 9, name: 'Bulbasaur', price: 27000, image: './img/bolbasor222.jpg' },
+            { id: 10, name: 'Scyther', price: 38000, image: './img/ss.jpg' },
         ],
     },
     {
-        title: 'Paquetes Jazwares',
+        title: 'Paquetes de Pokemon',
         products: [
-            { id: 11, name: 'Paquete doble', price: 31000, image: './img/pikachu y bol.jpg' },
-            { id: 12, name: 'Paquete triple', price: 48000, image: './img/packx3.jpg' },
-            { id: 13, name: 'Paquete triple', price: 150000, image: './img/charizard.jpg' },
-            { id: 14, name: 'Paquete triple', price: 60000, image: './img/paquete agua y tokepi.jpg' },
-            { id: 15, name: 'Paquete triple', price: 55000, image: './img/paquete char y meta.jpg' },
+            { id: 11, name: 'Paquete doble', price: 38000, image: './img/pikachu y bol.jpg' },
+            { id: 12, name: 'Paquete triple', price: 57000, image: './img/packx3.jpg' },
+            { id: 13, name: 'Paquete triple', price:'Consultar', image: './img/charizard.jpg' },
+            { id: 14, name: 'Paquete triple', price: 57000, image: './img/paquete agua y tokepi.jpg' },
+            { id: 15, name: 'Paquete triple', price: 57000, image: './img/paquete char y meta.jpg' },
         ]
     },
 ];
@@ -71,7 +71,7 @@ function displayProducts() {
         category.products.forEach(product => {
             const card = document.createElement('div');
             card.classList.add('card', 'm-2', 'text-center');
-            card.style.width = '12rem';
+            card.style.width = '250px';
 
             card.innerHTML = `
                 <img src="${product.image}" class="card-img-top" alt="${product.name}">

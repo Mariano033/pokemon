@@ -40,6 +40,19 @@ body{
     border: solid rgb(233, 7, 7) 1px;
     
 }
+
+.input-group-append {
+    position: absolute;
+    right:80px;
+    top: 85%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Esto asegura que el ícono no interfiera con la interacción del usuario */
+}
+
+.lupa {
+    font-size: 20px; /* Ajusta el tamaño de la lupa */
+    color: #050505; /* Color de la lupa */
+}
 #productContainer{
     margin-bottom: 190px;
     
@@ -135,13 +148,13 @@ img{
 }
 
 .card:hover .card-img-top {
-    transform: scale(1.5); /* Nivel de zoom al hacer hover */
+    transform: scale(1.2); /* Nivel de zoom al hacer hover */
 }
 #f3{
     top: 80px;
     border-radius: 8px;
     border: solid 2px transparent;
-    background-color: rgb(228, 226, 226);
+    
     padding-top: 35px;
     padding-bottom: 35px;
 }
@@ -177,4 +190,19 @@ img{
 
 #cartCount{
     color: rgb(230, 10, 10);
+}
+
+
+#checkoutButton {
+    background-color: #00a650; /* Color característico de Mercado Pago */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#checkoutButton:hover {
+    background-color: #007a40;
 }
