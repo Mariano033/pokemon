@@ -37,7 +37,11 @@ function searchProducts(query) {
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">$${product.price}</p>
-                        <button class="btn btn-success botonn" onclick="addToCart({ id: ${product.id}, name: '${product.name}', price: ${product.price}, image: '${product.image}' })">Agregar al carrito</button>
+                        <button 
+                        class="btn btn-primary botonn" 
+                        onclick="redirectToInstagram('${product.name}', ${product.price})">
+                        Consultar en Instagram
+                    </button>
                     </div>
                 `;
 
