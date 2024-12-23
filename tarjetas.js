@@ -24,32 +24,37 @@ const categories = [
             { id: 15, name: 'Paquete triple', price: 57000, image: './img/paquete char y meta.jpg' },
         ]
     },
+
+    {
+        title: 'Cartas TCG',
+        products: [
+            { id: 11, name: 'Lote de 50 Cartas TCG', price: 36500,image: './img/cartas.png' },
+            { id: 11, name: 'Base Set Booster ', price: 36500,image: './img/Booster.png' },
+        ]
+    },
+
+    {
+        title: 'LLaveros',
+        products: [
+            { id: 11, name: ' Llaveros Pokedex ', price: 6500 ,image: './img/llaveros.jpg' },
+
+            { id: 11, name: ' Llaveros con Luz Led  ', price:35000 ,image: './img/llaveroled.jpg' },
+            
+        ]
+    },
+
+    {
+        title: 'Mochilas',
+        products: [
+            { id: 11, name: 'Mochila maestro pkd', price: 65000 ,image: './img/mochila1.jpg' },
+            { id: 11, name: ' Mochila pikachu rojo ', price:69000 ,image: './img/mochila2.jpg' },
+            { id: 11, name: ' Mochila pikachu gens ', price:75000 ,image: './img/mochila3.jpg' },
+            
+        ]
+    },
 ];
 
-const cart = []; // Arreglo para almacenar los productos en el carrito
-
-// Función para agregar productos al carrito
-function addToCart(product) {
-    cart.push(product); // Agregar el producto al carrito
-    updateCartCount(); // Actualizar el contador del carrito
-    displayCart(); // Actualizar la vista del carrito
-}
-
-// Función para eliminar un producto del carrito
-function removeFromCart(productId) {
-    const index = cart.findIndex(product => product.id === productId);
-    if (index !== -1) {
-        cart.splice(index, 1); // Eliminar el producto del carrito
-        updateCartCount(); // Actualizar el contador del carrito
-        displayCart(); // Actualizar la vista del carrito
-    }
-}
-
-// Actualiza el contador del carrito
-function updateCartCount() {
-    const cartCount = document.getElementById('cartCount');
-    cartCount.textContent = cart.length; // Mostrar la cantidad de productos en el carrito
-}
+const instagramUsername = "pokedexcordoba"; // Reemplaza con el nombre de usuario de tu empresa en Instagram
 
 // Función para mostrar los productos en el contenedor principal
 function displayProducts() {
@@ -78,7 +83,11 @@ function displayProducts() {
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">$${product.price}</p>
-                    <button class="btn btn-success botonn" onclick="addToCart({ id: ${product.id}, name: '${product.name}', price: ${product.price}, image: '${product.image}' })">Agregar al carrito</button>
+                    <button 
+                        class="btn btn-primary botonn" 
+                        onclick="redirectToInstagram('${product.name}', ${product.price})">
+                        Consultar en Instagram
+                    </button>
                 </div>
             `;
 
@@ -90,57 +99,11 @@ function displayProducts() {
     });
 }
 
-// Función para mostrar el carrito dentro del modal
-function displayCart() {
-    const cartContainer = document.getElementById('cartSummary');
-    const cartTotal = document.getElementById('cartTotal');
-    cartContainer.innerHTML = ''; // Limpiar el contenedor antes de mostrar el carrito
-
-    let total = 0; // Inicializar el total en 0
-
-    cart.forEach((product, index) => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${product.name} - $${product.price}`;
-        
-        const removeButton = document.createElement('button');
-        removeButton.textContent = 'Eliminar';
-        removeButton.classList.add('btn', 'btn-danger', 'btn-sm', 'ms-2');
-        removeButton.onclick = () => removeFromCart(product.id);
-
-        listItem.appendChild(removeButton);
-        cartContainer.appendChild(listItem);
-        total += product.price; // Sumar el precio al total
-    });
-
-    cartTotal.textContent = total; // Mostrar el total en el modal
-}
-
-// Función para alternar el modal del carrito
-function toggleCartModal() {
-    const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
-    cartModal.toggle();
-}
-
-// Función para finalizar la compra y generar el enlace de WhatsApp
-function finalizePurchase() {
-    if (cart.length === 0) {
-        alert("El carrito está vacío. Agrega productos antes de finalizar la compra.");
-        return;
-    }
-
-    const businessPhone = ""; // Reemplaza con el número de WhatsApp de la empresa
-    let message = "Resumen de mi compra";
-
-    cart.forEach(product => {
-        message += `- ${product.name} - $${product.price}%0A`;
-    });
-
-    const total = cart.reduce((sum, product) => sum + product.price, 0);
-    message += `%0ATotal: $${total}`;
-
-    // Crear enlace de WhatsApp
-    const whatsappLink = `https://wa.me/${businessPhone}?text=${message}`;
-    window.open(whatsappLink, "_blank");
+// Función para redirigir al chat de Instagram
+function redirectToInstagram(productName, productPrice) {
+    const message = `Hola, estoy interesado en el producto ${productName} con precio $${productPrice}.`;
+    const instagramUrl = `https://www.instagram.com/${instagramUsername}/`;
+    window.open(instagramUrl, "_blank"); // Abrir el perfil de Instagram en una nueva pestaña
 }
 
 // Llamada para mostrar los productos al cargar la página

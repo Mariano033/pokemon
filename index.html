@@ -11,33 +11,38 @@
     <title>Pokedex-Cba</title>
 </head>
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-dark container-fluid fixed-top nav">
         <div class="container navi">
             <img src="./img/Pokebola.png" class="pokebola">
             <a class="navbar-brand" href="#">Pokedex-Cba</a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <p class="ultimate text-center my-3 ">Envio gratis dentro de la ciudad de Córdoba Capital </p>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active menu" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link menu" href="#footer">Contacto</a></li>
+                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Figuras</a>
+                        <a class="nav-link dropdown-toggle menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Artículos</a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#productContainer">Figuras Jazwares</a></li>
-                            <li><a class="dropdown-item" href="#f3">Cajas Jazwares</a></li>
+                            <li><a class="dropdown-item" href="#productContainer">Figuras</a></li>
+                            <li><a class="dropdown-item" href="#f3">Cartas TCG</a></li>
+                            <li><a class="dropdown-item" href="#f3">LLaveros</a></li>
+                            <li><a class="dropdown-item" href="#f3">Mochilas</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#footer">Contacto</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link menu" href="#footer">Contacto</a></li>
                 </ul>
-                <div id="cartIcon" class="cart-icon" onclick="toggleCartModal()">
-                    🛒 <span id="cartCount">0</span>
-                </div>
+                
             </div>
         </div>
     </nav>
+    
    
 
     <main class="container container-fluid">
@@ -67,11 +72,9 @@
 
         <section class="py-5 container d-flex flex-wrap justify-content-center" id="productContainer"></section>
 
-        <div class="container-fluid" id="f3">
-            <h2 class="text-center">
-                Envio gratis dentro de la ciudad de Córdoba Capital.<br><br>
-                Medios de Pago: Transferencia Bancaria.
-           
+        <div id="cartas"></div>
+        <div id="llaveros"></div>
+        <div id="mochilas"></div>
     </main> 
 
     

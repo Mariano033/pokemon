@@ -28,7 +28,11 @@ body{
     
 }
 
-
+.ultimate{
+    margin-left: 175px; /* Centrado horizontal y margen superior/inferior */
+  text-align: center; /* Centrar el texto */
+  color: rgb(175, 9, 9);
+}
 #titulo{
     font-weight: 650;
     color: yellow;
@@ -206,3 +210,17 @@ img{
 #checkoutButton:hover {
     background-color: #007a40;
 }
+
+@media (max-width: 768px) { /* Para pantallas de tablet o más pequeñas */
+    .ultimate {
+      margin: 10px auto; /* Reduce el margen */
+      font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
+    }
+  }
+  
+  @media (max-width: 576px) { /* Para pantallas de celular */
+    .ultimate {
+      margin: 5px auto; /* Margen aún más reducido */
+      font-size: 12px; /* Texto más pequeño */
+    }
+  }
