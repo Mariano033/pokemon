@@ -28,7 +28,7 @@ const categories = [
     {
         title: 'Cartas TCG',
         products: [
-            { id: 11, name: 'Lote de 50 Cartas TCG', price: 36500,image: './img/cartas.png' },
+            { id: 11, name: '50 Cartas TCG', price: 36500,image: './img/cartas.png' },
             { id: 11, name: 'Base Set Booster ', price: 36500,image: './img/Booster.png' },
         ]
     },
@@ -46,9 +46,9 @@ const categories = [
     {
         title: 'Mochilas',
         products: [
-            { id: 11, name: 'Mochila maestro pkd', price: 65000 ,image: './img/mochila1.jpg' },
-            { id: 11, name: ' Mochila pikachu rojo ', price:69000 ,image: './img/mochila2.jpg' },
-            { id: 11, name: ' Mochila pikachu gens ', price:75000 ,image: './img/mochila3.jpg' },
+            { id: 11, name: 'Mochila Maestro PKD', price: 65000 ,image: './img/mochila1.jpg' },
+            { id: 11, name: ' Mochila Pikachu Rojo ', price:69000 ,image: './img/mochila2.jpg' },
+            { id: 11, name: ' Mochila Pikachu Gens ', price:75000 ,image: './img/mochila3.jpg' },
             
         ]
     },
